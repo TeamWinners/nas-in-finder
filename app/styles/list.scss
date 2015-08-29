@@ -1,0 +1,169 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+#nas-dir-header {
+    font-size: 12px;
+    color: #BEBEBE;
+    font-weight: 100;
+    line-height: 38px;
+    cursor: default;
+}
+#nas-dir-header {
+    line-height: 30px;
+    background: #FFF;
+}
+
+#nas-dir-header {
+    display: table;
+    width: calc(100% - 246px);
+    background: #FFF;
+}
+
+#nas-dir-header > span {
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+#dir-header-name,
+.dir-content-name,
+.dir-content-name-edit {
+    position: relative;
+    display: inline-block;
+    /*width: 68%;*/
+    padding-left: 15px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+#dir-header-name {
+    width: 65%;
+    padding-left: 10px;
+    padding-right: 0;
+}
+.gecko #dir-header-name {
+    width: 74%;
+}
+
+#dir-header-name,
+.dir-content-name-edit {
+    text-overflow: ellipsis;
+}
+
+.dir-content-name-edit {
+    top: -5px;
+    width: 77%;
+    overflow: visible !important;
+}
+
+.dir-content-name input {
+    width: 100%;
+}
+
+#dir-header-size,
+.dir-content-size {
+    display: inline-block;
+    width: 11%;
+    padding-left: 15px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#dir-header-size {
+    position: relative;
+}
+.gecko #dir-header-size {
+    left: -9%;
+    padding-left: 103px;
+    white-space: nowrap;
+}
+
+
+#dir-header-modified,
+.dir-content-modified {
+    display: inline-block;
+    width: 13.4%;
+    padding-right: 9px;
+    padding-left: 41px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#dir-header-modified {
+    padding-right: 30px;
+}
+
+.dir-content-modified {
+    padding-left: 0;
+    white-space: pre;
+}
+
+.item {
+    position: relative;
+    display: table;
+    width: 100%;
+    height: 44px;
+    max-height: 44px;
+    font-size: 14px;
+    color: #4B5A69;
+    border-bottom: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    /* Enable GPU for Animations, if possible */
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.item:hover {
+    background-color: #F1F1F1;
+}
+
+.item.dropzone:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(220, 239, 223, .7);
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.item.dropzone > .dir-content-name > a {
+    position: absolute;
+    top: 13px;
+    z-index: 9;
+}
+
+.item.dropzone > .dir-content-size,
+.item.dropzone > .dir-content-modified {
+    display: none;
+}
+
+.item > span {
+    display: table-cell;
+}
+
+.item a {
+    display: inline-block;
+    max-width: 80%;
+    color: #4B5A69;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #15ABFF;
+    text-decoration: underline;
+}
