@@ -7,18 +7,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     font-size: 12px;
     color: #BEBEBE;
     font-weight: 100;
-    line-height: 38px;
     cursor: default;
-}
-#nas-dir-header {
     line-height: 30px;
     background: #FFF;
-}
-
-#nas-dir-header {
     display: table;
     width: calc(100% - 246px);
-    background: #FFF;
 }
 
 #nas-dir-header > span {
@@ -31,7 +24,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .dir-content-name-edit {
     position: relative;
     display: inline-block;
-    /*width: 68%;*/
     padding-left: 15px;
     vertical-align: middle;
     overflow: hidden;
@@ -78,7 +70,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     padding-left: 103px;
     white-space: nowrap;
 }
-
 
 #dir-header-modified,
 .dir-content-modified {

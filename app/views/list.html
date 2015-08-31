@@ -5,6 +5,12 @@
         <span id="dir-header-modified">Modified</span>
   </div>
   <div id="nas-content-container">
-    <ul id="nas-content"></ul>
+    <ul id="nas-content">
+      <li class="item" id="item_" data-id=""  data-path="" data-name="" ng-repeat="item in listContents">
+        <span class="dir_content_name"> {{ item.name }}</span>
+        <span class="dir_content_size"> </span>
+        <span class="dir_content_modified"> </span>
+      </li>
+    </ul>
   </div>
 </div>
