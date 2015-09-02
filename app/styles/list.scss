@@ -4,14 +4,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 
 #nas-dir-header {
-    font-size: 12px;
+    font-size: 15px;
     color: #BEBEBE;
     font-weight: 100;
     cursor: default;
     line-height: 30px;
     background: #FFF;
     display: table;
-    width: calc(100% - 246px);
+    width: 80%;
 }
 
 #nas-dir-header > span {
@@ -34,24 +34,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     padding-left: 10px;
     padding-right: 0;
 }
-.gecko #dir-header-name {
-    width: 74%;
-}
-
-#dir-header-name,
-.dir-content-name-edit {
-    text-overflow: ellipsis;
-}
-
-.dir-content-name-edit {
-    top: -5px;
-    width: 77%;
-    overflow: visible !important;
-}
-
-.dir-content-name input {
-    width: 100%;
-}
 
 #dir-header-size,
 .dir-content-size {
@@ -64,11 +46,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 #dir-header-size {
     position: relative;
-}
-.gecko #dir-header-size {
-    left: -9%;
-    padding-left: 103px;
-    white-space: nowrap;
 }
 
 #dir-header-modified,
@@ -88,73 +65,4 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .dir-content-modified {
     padding-left: 0;
     white-space: pre;
-}
-
-.item {
-    position: relative;
-    display: table;
-    width: 100%;
-    height: 44px;
-    max-height: 44px;
-    font-size: 14px;
-    color: #4B5A69;
-    border-bottom: 1px solid #EBEBEB;
-    box-sizing: border-box;
-    overflow: hidden;
-    cursor: pointer;
-    /* Enable GPU for Animations, if possible */
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-perspective: 0;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.item:hover {
-    background-color: #F1F1F1;
-}
-
-.item.dropzone:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(220, 239, 223, .7);
-    pointer-events: none;
-    box-sizing: border-box;
-}
-
-.item.dropzone > .dir-content-name > a {
-    position: absolute;
-    top: 13px;
-    z-index: 9;
-}
-
-.item.dropzone > .dir-content-size,
-.item.dropzone > .dir-content-modified {
-    display: none;
-}
-
-.item > span {
-    display: table-cell;
-}
-
-.item a {
-    display: inline-block;
-    max-width: 80%;
-    color: #4B5A69;
-    text-decoration: none;
-}
-
-.item a:hover {
-    color: #15ABFF;
-    text-decoration: underline;
 }
