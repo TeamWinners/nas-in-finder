@@ -3,13 +3,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+#nas-content {
+    list-style: none;
+}
+
 #nas-dir-header {
     font-size: 15px;
-    color: #BEBEBE;
-    font-weight: 100;
     cursor: default;
     line-height: 30px;
-    background: #FFF;
     display: table;
     width: 80%;
 }
@@ -51,9 +52,9 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 #dir-header-modified,
 .dir-content-modified {
     display: inline-block;
-    width: 13.4%;
-    padding-right: 9px;
-    padding-left: 41px;
+    width: 15%;
+    padding-right: 10px;
+    padding-left: 40px;
     vertical-align: middle;
     text-align: left;
 }
